@@ -66,6 +66,7 @@ public class MavenMiddlewareMain{
             ex.printStackTrace();
         }
         
+        factory.close();
     }
     
     private static void printNode(GermplasmPedigreeTreeNode node, int level) {
