@@ -14,10 +14,10 @@ public class MavenMiddlewareMain{
     public static void main(String[] args) {
         //set db connection properties
         DatabaseConnectionParameters localDbParameters = 
-            new DatabaseConnectionParameters("localhost", "3306", "ibdbv1_sample_local", "root", "lich27king");
+            new DatabaseConnectionParameters("localhost", "3306", "ibdbv1_sample_local", "user", "password");
         
         DatabaseConnectionParameters centralDbParameters = 
-            new DatabaseConnectionParameters("localhost", "3306", "ibdb_rice_20120405", "root", "lich27king");
+            new DatabaseConnectionParameters("localhost", "3306", "ibdb_rice_20120405", "user", "password");
         
         //create the ManagerFactory
         ManagerFactory factory = new ManagerFactory(localDbParameters, centralDbParameters);
